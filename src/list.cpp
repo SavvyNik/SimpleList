@@ -11,9 +11,9 @@ void List::print_menu() {
     cout << " Enter your choice and press return: ";
 
     cin >> choice;
-
+ 
     if( choice == 4 ){
-        exit(0);
+        return;
     }
     else if ( choice == 2) {
         add_item();
