@@ -83,3 +83,20 @@ void List::print_list() {
         cout << "Invalid Choice. Quitting..\n";
     }
 }
+
+void List::find_userList() {
+    bool userFound = false;
+    cout << "\n\n\n\n\n\n\n\n";
+    cout << "*** Welcome " << name << " ***\n";
+
+    for ( int user_index=0; user_index < (int)mainList.size(); user_index++) {
+        cout << mainList[user_index][0] << "\n";
+        if ( mainList[user_index][0] == name ) {
+            cout << "User has been found: " << mainList[user_index][0] << "\n";
+            list = mainList[user_index];
+            userFound = true;
+            break;
+        }
+    }
+
+}
