@@ -35,7 +35,7 @@ void List::print_menu() {
 }
 
 void List::add_item() {
-    cout << "\n\n\n\n\n\n\n\n";
+    cout << "\n\n";
     cout << "*** Add Item ***\n";
     cout << "Type in an item and press enter: ";
 
@@ -44,7 +44,7 @@ void List::add_item() {
 
     list.push_back(item);
 
-    cout << "Successfully added an item to the list \n\n\n\n";
+    cout << "Successfully added an item to the list \n";
     cin.clear();
 
     print_menu();
@@ -57,6 +57,7 @@ void List::delete_item() {
         for( int i=0; i < (int)list.size(); i++ ) {
             cout << i << ": " << list[i] << "\n";
         }
+
         int choiceNum;
         cin >> choiceNum;
         list.erase(list.begin()+choiceNum);
@@ -69,7 +70,7 @@ void List::delete_item() {
 }
 
 void List::print_list() {
-    cout << "\n\n\n\n\n\n\n\n";
+    cout << "\n\n\n\n";
     cout << "*** Printing List ***\n";
 
     for( int list_index=0; list_index < (int)list.size(); list_index++ ) {
@@ -90,7 +91,7 @@ void List::print_list() {
 
 bool List::find_userList() {
     bool userFound = false;
-    cout << "\n\n\n\n\n\n\n\n";
+    cout << "\n\n\n\n";
     cout << "*** Welcome " << name << " ***\n";
 
     for ( int user_index=0; user_index < (int)mainList.size(); user_index++) {
